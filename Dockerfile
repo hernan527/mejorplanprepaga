@@ -11,7 +11,7 @@ RUN rm -rf /usr/share/nginx/html/*
 RUN rm /etc/nginx/conf.d/default.conf
 
 # Copy your custom Nginx configuration (e.g., to handle routing for SPA)
-COPY ./nginx.conf /etc/nginx/nginx.conf
+COPY ../mejorplanprepaga.conf /etc/nginx/nginx.conf
 
 # Copy your HTML, CSS, and JS files to the Nginx directory
 COPY . /usr/share/nginx/html
